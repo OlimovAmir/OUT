@@ -23,10 +23,14 @@ namespace OUT
         {
             int a = 10;
 
-            int b = 20;
-
             Foo(ref a);
-            Bar(out b);
+            Bar(out int b);
+
+
+            string str = Console.ReadLine();
+            int.TryParse(str, out int result);
+
+            Console.WriteLine(result);
 
         }
     }
